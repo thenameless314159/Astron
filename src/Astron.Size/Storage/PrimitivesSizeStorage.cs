@@ -1,6 +1,4 @@
-﻿using Astron.Size.Storage;
-
-namespace Astron.Size.BuiltIn
+﻿namespace Astron.Size.Storage
 {
     public class BoolSizeStorage : ISizeStorage<bool>
     {

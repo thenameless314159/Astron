@@ -5,15 +5,19 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F7FCABBF-D895-4FD8-84AC-35C2E8914540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Memory", "src\Astron.Memory\Astron.Memory.csproj", "{A28A8335-7066-4F14-86B1-774D09440B38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Memory", "src\Astron.Memory\Astron.Memory.csproj", "{A28A8335-7066-4F14-86B1-774D09440B38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4D875ED2-589F-4A35-BDF3-97342E3B49EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Memory.Tests", "tests\Astron.Memory.Tests\Astron.Memory.Tests.csproj", "{B64BC68A-98CF-484D-B322-D15044463DB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Memory.Tests", "tests\Astron.Memory.Tests\Astron.Memory.Tests.csproj", "{B64BC68A-98CF-484D-B322-D15044463DB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Size", "src\Astron.Size\Astron.Size.csproj", "{F50A6FAD-5224-4DED-BB70-FFBACCEE6933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Size", "src\Astron.Size\Astron.Size.csproj", "{F50A6FAD-5224-4DED-BB70-FFBACCEE6933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Size.Tests", "tests\Astron.Size.Tests\Astron.Size.Tests.csproj", "{3DB22D63-F9E0-4836-8675-6B9162933112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Size.Tests", "tests\Astron.Size.Tests\Astron.Size.Tests.csproj", "{3DB22D63-F9E0-4836-8675-6B9162933112}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Binary", "src\Astron.Binary\Astron.Binary.csproj", "{DE869F32-33F7-4B4C-91EB-FCA27822391A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Binary.Tests", "tests\Astron.Binary.Tests\Astron.Binary.Tests.csproj", "{AD420339-6CE1-40D1-8801-4587744FE667}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,14 @@ Global
 		{3DB22D63-F9E0-4836-8675-6B9162933112}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DB22D63-F9E0-4836-8675-6B9162933112}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DB22D63-F9E0-4836-8675-6B9162933112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE869F32-33F7-4B4C-91EB-FCA27822391A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE869F32-33F7-4B4C-91EB-FCA27822391A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE869F32-33F7-4B4C-91EB-FCA27822391A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE869F32-33F7-4B4C-91EB-FCA27822391A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD420339-6CE1-40D1-8801-4587744FE667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD420339-6CE1-40D1-8801-4587744FE667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD420339-6CE1-40D1-8801-4587744FE667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD420339-6CE1-40D1-8801-4587744FE667}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +58,8 @@ Global
 		{B64BC68A-98CF-484D-B322-D15044463DB4} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 		{F50A6FAD-5224-4DED-BB70-FFBACCEE6933} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
 		{3DB22D63-F9E0-4836-8675-6B9162933112} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
+		{DE869F32-33F7-4B4C-91EB-FCA27822391A} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
+		{AD420339-6CE1-40D1-8801-4587744FE667} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A5CED3F-8E86-40B9-BA87-62C5760ABD9F}

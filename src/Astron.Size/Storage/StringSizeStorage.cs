@@ -1,7 +1,6 @@
 ﻿using System;
-using Astron.Size.Storage;
 
-namespace Astron.Size.BuiltIn
+namespace Astron.Size.Storage
 {
     public class StringSizeStorage : ISizeOfStorage<string>
     {

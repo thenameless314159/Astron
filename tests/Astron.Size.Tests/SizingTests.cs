@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using System.Runtime.InteropServices;
-using Astron.Size.BuiltIn;
+using Astron.Size.Storage;
 using Xunit;
 
 namespace Astron.Size.Tests
