@@ -38,7 +38,7 @@ Please, be aware that there is a [**Code of Conduct**](https://dotnetfoundation.
 Be sure to look at [*currently openened issues*](https://github.com/thenameless314159/AstronCore/issues) to know what is going on. If you want to make a contribution, you must contact me before !
 
 ## Contact
-**Discord:** NamelessK1NG#3577
+**Discord:** NamelessK1NG#3577  
 **Mail:** thenameless314159@gmail.com
 
 ## Credits
