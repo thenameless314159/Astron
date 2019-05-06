@@ -39,6 +39,7 @@ Be sure to look at [*currently openened issues*](https://github.com/thenameless3
 
 ## Contact
 **Discord:** NamelessK1NG#3577
+**Mail:** thenameless314159@gmail.com
 
 ## Credits
 [**DrBrook**](https://github.com/DrBrooklyn "DrBrook") - My teacher and also a long-time friend, this project would never happen without him.  
