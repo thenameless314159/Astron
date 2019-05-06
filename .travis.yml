@@ -17,4 +17,4 @@ jobs:
       script: dotnet restore && dotnet build
     - stage: test
       name: run-tests
-      script: ./run-tests.sh
+      script: dotnet test
