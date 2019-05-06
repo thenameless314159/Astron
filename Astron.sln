@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Core", "Astron.Core\Astron.Core.csproj", "{3FDCFD59-B146-449C-9D97-56D941838D5D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F7FCABBF-D895-4FD8-84AC-35C2E8914540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Memory", "src\Astron.Memory\Astron.Memory.csproj", "{A28A8335-7066-4F14-86B1-774D09440B38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4D875ED2-589F-4A35-BDF3-97342E3B49EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Memory.Tests", "tests\Astron.Memory.Tests\Astron.Memory.Tests.csproj", "{B64BC68A-98CF-484D-B322-D15044463DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Size", "src\Astron.Size\Astron.Size.csproj", "{F50A6FAD-5224-4DED-BB70-FFBACCEE6933}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Size.Tests", "tests\Astron.Size.Tests\Astron.Size.Tests.csproj", "{3DB22D63-F9E0-4836-8675-6B9162933112}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +21,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3FDCFD59-B146-449C-9D97-56D941838D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FDCFD59-B146-449C-9D97-56D941838D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FDCFD59-B146-449C-9D97-56D941838D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FDCFD59-B146-449C-9D97-56D941838D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28A8335-7066-4F14-86B1-774D09440B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28A8335-7066-4F14-86B1-774D09440B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28A8335-7066-4F14-86B1-774D09440B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28A8335-7066-4F14-86B1-774D09440B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64BC68A-98CF-484D-B322-D15044463DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64BC68A-98CF-484D-B322-D15044463DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64BC68A-98CF-484D-B322-D15044463DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64BC68A-98CF-484D-B322-D15044463DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F50A6FAD-5224-4DED-BB70-FFBACCEE6933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F50A6FAD-5224-4DED-BB70-FFBACCEE6933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F50A6FAD-5224-4DED-BB70-FFBACCEE6933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F50A6FAD-5224-4DED-BB70-FFBACCEE6933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB22D63-F9E0-4836-8675-6B9162933112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB22D63-F9E0-4836-8675-6B9162933112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB22D63-F9E0-4836-8675-6B9162933112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB22D63-F9E0-4836-8675-6B9162933112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A28A8335-7066-4F14-86B1-774D09440B38} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
+		{B64BC68A-98CF-484D-B322-D15044463DB4} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
+		{F50A6FAD-5224-4DED-BB70-FFBACCEE6933} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
+		{3DB22D63-F9E0-4836-8675-6B9162933112} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A5CED3F-8E86-40B9-BA87-62C5760ABD9F}
