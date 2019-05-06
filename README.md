@@ -43,4 +43,4 @@ Be sure to look at [*currently openened issues*](https://github.com/thenameless3
 [**McGravell**](https://github.com/mgravell "McGravell") - For his works with the new "Pipelines" API of .NET Core 2.0
 
 ## License
-See [the license](https://github.com/thenameless314159/Astron/blob/master/license.md).
+See [the license](https://github.com/thenameless314159/Astron/blob/master/LICENSE).
