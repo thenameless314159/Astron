@@ -16,7 +16,11 @@ The main goal of this project is to provide **scalable**, **easy-to-use** and **
 
 ## Overview
 These libraries were firstly designed to fit a game back-end server therefore we didn't wanted any dependency on our project and tried to implement as much as we could by ourselves. Each assembly have its matching unit-test project in the *tests/* folder.
-
+  
+#### Unit tests  
+![UnitTests](https://i.imgur.com/Ew9RUai.png)
+  
+#### Project structure  
 | Assembly Name        	|                       Description                      	| Dependencies        	|
 |----------------------	|:------------------------------------------------------:	|---------------------	|
 | Astron.Binary        	| Provides binary reader & writer with position handling 	| Memory, Size        	|
@@ -26,7 +30,7 @@ These libraries were firstly designed to fit a game back-end server therefore we
 | Astron.Memory        	|         Memory policy with base implementations        	| none                	|
 | Astron.Serialization 	|    Auto-generated serializer/deserializer from POCO    	| Binary, Expressions 	|
 | Astron.Size          	|                    Size calculation                    	| Expressions         	|
-
+  
 ## Get Started
 
 If you want further informations about how to setup and use each lib, take a look at [**the full documentation**](https://github.com/thenameless314159/Astron/wiki).
