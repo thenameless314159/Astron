@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Size", "src\Astron.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Size.Tests", "tests\Astron.Size.Tests\Astron.Size.Tests.csproj", "{3DB22D63-F9E0-4836-8675-6B9162933112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Binary", "src\Astron.Binary\Astron.Binary.csproj", "{DE869F32-33F7-4B4C-91EB-FCA27822391A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Binary", "src\Astron.Binary\Astron.Binary.csproj", "{DE869F32-33F7-4B4C-91EB-FCA27822391A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Binary.Tests", "tests\Astron.Binary.Tests\Astron.Binary.Tests.csproj", "{AD420339-6CE1-40D1-8801-4587744FE667}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Binary.Tests", "tests\Astron.Binary.Tests\Astron.Binary.Tests.csproj", "{AD420339-6CE1-40D1-8801-4587744FE667}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Expressions", "src\Astron.Expressions\Astron.Expressions.csproj", "{A1EC96DA-2F0F-4A78-BED8-43122D24499E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Expressions.Tests", "tests\Astron.Expressions.Tests\Astron.Expressions.Tests.csproj", "{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,14 @@ Global
 		{AD420339-6CE1-40D1-8801-4587744FE667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD420339-6CE1-40D1-8801-4587744FE667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD420339-6CE1-40D1-8801-4587744FE667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1EC96DA-2F0F-4A78-BED8-43122D24499E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1EC96DA-2F0F-4A78-BED8-43122D24499E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1EC96DA-2F0F-4A78-BED8-43122D24499E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1EC96DA-2F0F-4A78-BED8-43122D24499E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +72,8 @@ Global
 		{3DB22D63-F9E0-4836-8675-6B9162933112} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 		{DE869F32-33F7-4B4C-91EB-FCA27822391A} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
 		{AD420339-6CE1-40D1-8801-4587744FE667} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
+		{A1EC96DA-2F0F-4A78-BED8-43122D24499E} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
+		{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A5CED3F-8E86-40B9-BA87-62C5760ABD9F}
