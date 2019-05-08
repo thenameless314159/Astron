@@ -1,4 +1,4 @@
-# ![](https://www.shareicon.net/data/32x32/2016/11/09/851508_planet_512x512.png) Astron [![Build Status](https://travis-ci.com/thenameless314159/AstronCore.svg?token=r6UpDpoyLDxvQzKZj12r&branch=master)](https://travis-ci.com/thenameless314159/AstronCore)
+# ![](https://www.shareicon.net/data/32x32/2016/11/09/851508_planet_512x512.png) Astron [![Build Status](https://travis-ci.com/thenameless314159/Astron.svg?branch=master)](https://travis-ci.com/thenameless314159/Astron)
 **.NET Core 2.2** from scratch set of library using last feature of C# language. This project was made under the direction of [*DrBrook*](https://github.com/DrBrooklyn "DrBrook") for learning purpose. 
 
 The main goal of this project is to provide **scalable**, **easy-to-use** and **easily configurable** implementations for a networking infrastructure such as binary reader/writers, auto-generated serializers, packet size calculation and more. All of that with the last features from the .NET Core framework.
@@ -21,7 +21,6 @@ These libraries were firstly designed to fit a game back-end server therefore we
 |----------------------	|:------------------------------------------------------:	|---------------------	|
 | Astron.Binary        	| Provides binary reader & writer with position handling 	| Memory, Size        	|
 | Astron.Expressions   	|            Some helpers for expression trees           	| none                	|
-| Astron.Immutables    	|               Some helpers for immutables              	| none                	|
 | Astron.IoC           	|      IoC container to handle dependency injection      	| Immutables, Logging 	|
 | Astron.Logging       	|                    Logging utilities                   	| none                	|
 | Astron.Memory        	|         Memory policy with base implementations        	| none                	|
