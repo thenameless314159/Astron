@@ -15,7 +15,7 @@ The main goal of this project is to provide **scalable**, **easy-to-use** and **
 
 
 ## Overview
-These libraries were firstly designed to fit a game back-end server therefore we didn't wanted any dependency on our project. Each assembly have its matching unit-test project in the *tests/* folder.
+These libraries were firstly designed to fit a game back-end server therefore we didn't wanted any dependency on our project and tried to implement as much as we could by ourselves. Each assembly have its matching unit-test project in the *tests/* folder.
 
 | Assembly Name        	|                       Description                      	| Dependencies        	|
 |----------------------	|:------------------------------------------------------:	|---------------------	|
@@ -30,14 +30,17 @@ These libraries were firstly designed to fit a game back-end server therefore we
 
 ## Get Started
 
-**Todo:** create page for each assembly with docs
+If you want further informations about how to setup and use each lib, take a look at [**the full documentation**](https://github.com/thenameless314159/Astron/wiki).
 
 ## Contributing
 Please, be aware that there is a [**Code of Conduct**](https://dotnetfoundation.org/code-of-conduct) that have been defined by the .NET foundation and adopted by this repository.
   
 Be sure to look at [*currently openened issues*](https://github.com/thenameless314159/AstronCore/issues) to know what is going on. If you want to make a contribution, you must contact me before !
+
 ## Contact
-**Discord:** NamelessK1NG#3577
+**Discord:** NamelessK1NG#3577  
+**Mail:** thenameless314159@gmail.com
+
 ## Credits
 [**DrBrook**](https://github.com/DrBrooklyn "DrBrook") - My teacher and also a long-time friend, this project would never happen without him.  
 [**McGravell**](https://github.com/mgravell "McGravell") - For his works with the new "Pipelines" API of .NET Core 2.0
