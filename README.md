@@ -28,8 +28,8 @@ These libraries were firstly designed to fit a game back-end server therefore we
 | Astron.IoC           	|      IoC container to handle dependency injection      	| Logging             	|
 | Astron.Logging       	|                    Logging utilities                   	| none                	|
 | Astron.Memory        	|         Memory policy with base implementations        	| none                	|
-| Astron.Serialization 	|    Auto-generated serializer/deserializer from POCO    	| Binary, Expressions 	|
-| Astron.Size          	|                    Size calculation                    	| Expressions         	|
+| Astron.Serialization 	|    Auto-generated serializer/deserializer for POCO    	| Binary, Expressions 	|
+| Astron.Size          	| Size calculation with auto-generated methods for POCO  	| Expressions         	|
   
 ## Get Started
 
