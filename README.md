@@ -25,7 +25,7 @@ These libraries were firstly designed to fit a game back-end server therefore we
 |----------------------	|:------------------------------------------------------:	|---------------------	|
 | Astron.Binary        	| Provides binary reader & writer with position handling 	| Memory, Size        	|
 | Astron.Expressions   	|            Some helpers for expression trees           	| none                	|
-| Astron.IoC           	|      IoC container to handle dependency injection      	| Immutables, Logging 	|
+| Astron.IoC           	|      IoC container to handle dependency injection      	| Logging             	|
 | Astron.Logging       	|                    Logging utilities                   	| none                	|
 | Astron.Memory        	|         Memory policy with base implementations        	| none                	|
 | Astron.Serialization 	|    Auto-generated serializer/deserializer from POCO    	| Binary, Expressions 	|
