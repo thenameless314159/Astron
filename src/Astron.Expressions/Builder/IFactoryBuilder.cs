@@ -6,6 +6,6 @@ namespace Astron.Expressions.Builder
 {
     public interface IFactoryBuilder<in TKey, in TVal, out TFact> : IBuilder<TFact>
     {
-        void Register(TKey key, TVal val);
+        IFactoryBuilder<TKey, TVal, TFact> Register(TKey key, TVal val);
     }
 }

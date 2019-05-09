@@ -8,17 +8,17 @@ namespace Astron.Size
     public class SizingBuilder : ISizingBuilder
     {
         public SizingBuilder() => this
-            .Register(new BoolSizeStorage())
-            .Register(new Int8SizeStorage())
-            .Register(new UInt8SizeStorage())
-            .Register(new Int16SizeStorage())
-            .Register(new UInt16SizeStorage())
-            .Register(new Int32SizeStorage())
-            .Register(new UInt32SizeStorage())
-            .Register(new Int64SizeStorage())
-            .Register(new UInt64SizeStorage())
-            .Register(new FloatSizeStorage())
-            .Register(new DoubleSizeStorage());
+            .Register(StorageProvider.CreatePrimitive<bool>())
+            .Register(StorageProvider.CreatePrimitive<byte>())
+            .Register(StorageProvider.CreatePrimitive<sbyte>())
+            .Register(StorageProvider.CreatePrimitive<short>())
+            .Register(StorageProvider.CreatePrimitive<ushort>())
+            .Register(StorageProvider.CreatePrimitive<int>())
+            .Register(StorageProvider.CreatePrimitive<uint>())
+            .Register(StorageProvider.CreatePrimitive<long>())
+            .Register(StorageProvider.CreatePrimitive<ulong>())
+            .Register(StorageProvider.CreatePrimitive<float>())
+            .Register(StorageProvider.CreatePrimitive<double>());
 
         public ISizingBuilder Register<T>(ISizeStorage<T> storage)
         {
@@ -28,7 +28,7 @@ namespace Astron.Size
 
         public ISizingBuilder Register<T>(ISizeOfStorage<T> storage)
         {
-            SizeOfFuncCache<T>.SizeOf = storage.Calculate;
+            SizeOfCache<T>.Calculate = storage.Calculate;
             return this;
         }
 

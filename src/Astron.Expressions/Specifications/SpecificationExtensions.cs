@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Astron.Expressions.Specifications;
-
-namespace Astron.Expressions.Helpers
+﻿namespace Astron.Expressions.Specifications
 {
     public static class SpecificationExtensions
     {

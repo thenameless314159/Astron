@@ -14,7 +14,11 @@ namespace Astron.Expressions.Builder
             Builder = ImmutableDictionary.CreateBuilder<TKey, TVal>();
         }
 
-        public void Register(TKey key, TVal val) => Builder[key] = val;
+        public IFactoryBuilder<TKey, TVal, TFact> Register(TKey key, TVal val)
+        {
+            Builder[key] = val;
+            return this;
+        }
 
         /// <summary>
         /// Builds a factory and clear the dictionary builder.

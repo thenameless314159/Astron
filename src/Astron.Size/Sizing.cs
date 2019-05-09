@@ -13,16 +13,16 @@ namespace Astron.Size
         }
 
         public int SizeOf<T>() => SizeValueCache<T>.Value;
-        public int SizeOf<T>(T value) => SizeOfFuncCache<T>.SizeOf(this, value);
+        public int SizeOf<T>(T value) => SizeOfCache<T>.Calculate(this, value);
 
         public int SizeOf<T>(T[] values)
-            => values.Sum(value => SizeOfFuncCache<T>.SizeOf(this, value));
+            => values.Sum(value => SizeOfCache<T>.Calculate(this, value));
 
         public int SizeOf<T>(Memory<T> values)
         {
             var size = 0;
             foreach (var value in values.Span)
-                size += SizeOfFuncCache<T>.SizeOf(this, value);
+                size += SizeOfCache<T>.Calculate(this, value);
 
             return size;
         }
@@ -31,7 +31,7 @@ namespace Astron.Size
         {
             var size = 0;
             foreach (var value in values.Span)
-                size += SizeOfFuncCache<T>.SizeOf(this, value);
+                size += SizeOfCache<T>.Calculate(this, value);
 
             return size;
         }

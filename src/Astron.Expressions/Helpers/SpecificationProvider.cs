@@ -19,6 +19,7 @@ namespace Astron.Expressions.Helpers
         public static BaseSpecification<PropertyInfo> IsGenericEnumerable => new IsGenericEnumerable();
         public static BaseSpecification<PropertyInfo> IsGenericCollection => new IsGenericCollection();
         public static BaseSpecification<PropertyInfo> IsGenericOfGeneric => new IsGenericOfGeneric();
+        public static BaseSpecification<PropertyInfo> IsGenericPrimitive => new IsGenericPrimitive();
         public static BaseSpecification<PropertyInfo> IsGenericValueType => new IsGenericValueType();
         public static BaseSpecification<PropertyInfo> IsGenericString => new IsGenericString();
         public static BaseSpecification<PropertyInfo> IsGeneric => new IsGeneric();
