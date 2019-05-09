@@ -23,7 +23,7 @@ namespace Astron.Size.Expressions
 
         protected readonly TComp ExprCompiler;
 
-        protected void CreateExpression()
+        protected virtual void CreateExpression()
         {
             if (_isAlreadyBuilt) return;
 
