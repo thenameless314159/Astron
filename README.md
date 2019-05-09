@@ -1,5 +1,5 @@
 # ![](https://www.shareicon.net/data/32x32/2016/11/09/851508_planet_512x512.png) Astron [![Build Status](https://travis-ci.com/thenameless314159/Astron.svg?branch=master)](https://travis-ci.com/thenameless314159/Astron)
-**.NET Core 2.2** from scratch set of library using last feature of C# language. This project was made by me under the direction of [*DrBrook*](https://github.com/DrBrooklyn "DrBrook") for learning purpose. 
+**.NET Core 2.2** from scratch set of library using last feature of C# language. This project was made by myself under the direction of [*DrBrook*](https://github.com/DrBrooklyn "DrBrook") for learning purpose. 
 
 The main goal of this project is to provide **scalable**, **easy-to-use** and **easily configurable** implementations for a networking infrastructure such as binary reader/writers, auto-generated serializers, packet size calculation and more. All of that with the last features from the .NET Core framework.
 
@@ -18,7 +18,7 @@ The main goal of this project is to provide **scalable**, **easy-to-use** and **
 These libraries were firstly designed to fit a game back-end server therefore we didn't wanted any dependency on our project and tried to implement as much as we could by ourselves. Each assembly have its matching unit-test project in the *tests/* folder.
   
 ### Unit tests  
-![UnitTests](https://i.imgur.com/Ew9RUai.png)
+![UnitTests](https://i.imgur.com/GfaXO2w.png)
   
 ### Project structure  
 | Assembly Name        	|                       Description                      	| Dependencies        	|
