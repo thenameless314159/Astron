@@ -12,20 +12,25 @@ namespace Astron.Size.Expressions
         where TComp : ICalculateFuncCompilerOf<TClass>, new()
     {
         private Expression<Func<ISizing, TClass, int>> _builtExpr;
-        private bool _isAlreadyBuilt;
+
+        
 
         public IMatchingStrategy<PropertyInfo, TComp> Strategy { protected get; set; }
 
-        public CalculateFuncBuilder()
-        {
-            ExprCompiler = new TComp();
-        }
+        public CalculateFuncBuilder() => ExprCompiler = new TComp();
 
-        protected readonly TComp ExprCompiler;
+        protected TComp ExprCompiler { get; }
+        protected bool IsAlreadyBuilt { get; private set; }
+
+        protected void SetExpr()
+        {
+            _builtExpr = ExprCompiler.ToExpression();
+            IsAlreadyBuilt = true;
+        }
 
         protected virtual void CreateExpression()
         {
-            if (_isAlreadyBuilt) return;
+            if (IsAlreadyBuilt) return;
 
             ExprCompiler.Parameter<ISizing>("sizing");
             ExprCompiler.Parameter<TClass>("value");
@@ -35,13 +40,12 @@ namespace Astron.Size.Expressions
             foreach (var property in properties) Strategy.Process(property, ExprCompiler);
 
             ExprCompiler.EmitReturn<int>(size);
-            _builtExpr = ExprCompiler.ToExpression();
-            _isAlreadyBuilt = true;
+            SetExpr();
         }
 
         public Func<ISizing, TClass, int> Build()
         {
-            if (_isAlreadyBuilt) return _builtExpr.Compile();
+            if (IsAlreadyBuilt) return _builtExpr.Compile();
 
             CreateExpression();
             return ExprCompiler.Compile();
@@ -51,6 +55,6 @@ namespace Astron.Size.Expressions
         /// Call the ToString() method of the current expression compiler
         /// </summary>
         /// <returns></returns>
-        public override string ToString() => _isAlreadyBuilt ? _builtExpr.ToReadableString() : ExprCompiler.ToString();
+        public override string ToString() => IsAlreadyBuilt ? _builtExpr.ToReadableString() : ExprCompiler.ToString();
     }
 }
