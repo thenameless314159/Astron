@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Astron.Logging.Extensions
+﻿namespace Astron.Logging.Extensions
 {
     public static class StringExtensions
     {

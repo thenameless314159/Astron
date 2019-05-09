@@ -1,8 +1,5 @@
-using System;
 using System.Text;
-using Astron.Logging.Strategy;
 using Astron.Logging.Tests.Mock;
-using Moq;
 using Xunit;
 
 namespace Astron.Logging.Tests

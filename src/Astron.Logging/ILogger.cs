@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Astron.Logging
+﻿namespace Astron.Logging
 {
     public interface ILogger
     {

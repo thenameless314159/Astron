@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Runtime.CompilerServices;
-using System.Text;
 using Astron.Expressions.Specifications;
 
 [assembly:InternalsVisibleTo("Astron.Expressions.Tests")]

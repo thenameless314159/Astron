@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
-using Astron.Expressions;
 using Astron.Expressions.Matching;
 
 namespace Astron.Size.Expressions

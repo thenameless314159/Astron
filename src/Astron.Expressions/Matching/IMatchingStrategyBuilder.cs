@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Astron.Expressions.Builder;
+﻿using Astron.Expressions.Builder;
 
 namespace Astron.Expressions.Matching
 {

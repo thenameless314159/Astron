@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using System.Runtime.InteropServices;
 using Astron.Size.Storage;
 using Astron.Size.Tests.Helpers;
 using Xunit;

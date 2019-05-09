@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Astron.Expressions.Helpers;
-using Astron.Expressions.Specifications;
+﻿using Astron.Expressions.Specifications;
 using Xunit;
 
 namespace Astron.Expressions.Tests

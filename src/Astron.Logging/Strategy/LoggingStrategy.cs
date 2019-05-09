@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Astron.Logging.Extensions;
 
 namespace Astron.Logging.Strategy

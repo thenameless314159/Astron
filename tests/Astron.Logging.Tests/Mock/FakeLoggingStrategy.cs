@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Astron.Logging.Strategy;
+﻿using Astron.Logging.Strategy;
 using Moq;
 
 namespace Astron.Logging.Tests.Mock

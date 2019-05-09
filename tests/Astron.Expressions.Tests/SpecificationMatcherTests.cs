@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Text;
 using Astron.Expressions.Matching;
 using Astron.Expressions.Specifications;
 using Xunit;

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Astron.Size.Cache;
 using Astron.Size.Storage;
 using Astron.Size.Tests.Models;

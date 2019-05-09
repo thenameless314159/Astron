@@ -1,6 +1,5 @@
 using System;
 using Moq;
-using Moq.Protected;
 using Xunit;
 
 namespace Astron.Memory.Tests
