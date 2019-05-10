@@ -23,9 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Expressions", "src\A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Expressions.Tests", "tests\Astron.Expressions.Tests\Astron.Expressions.Tests.csproj", "{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Logging", "src\Astron.Logging\Astron.Logging.csproj", "{94D5BACC-21E7-4C69-A27A-35C2039519AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Logging", "src\Astron.Logging\Astron.Logging.csproj", "{94D5BACC-21E7-4C69-A27A-35C2039519AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Logging.Tests", "tests\Astron.Logging.Tests\Astron.Logging.Tests.csproj", "{6961A2AA-3718-422B-83AC-63E19A669F2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astron.Logging.Tests", "tests\Astron.Logging.Tests\Astron.Logging.Tests.csproj", "{6961A2AA-3718-422B-83AC-63E19A669F2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "e2e", "e2e", "{D1749D0C-19BE-4549-8EB4-3A2CA2D9D73A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Logging.IntegrationTests", "e2e\Astron.Logging.IntegrationTests\Astron.Logging.IntegrationTests.csproj", "{F69D924F-5789-4D1F-8C15-974FC301ACDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +77,10 @@ Global
 		{6961A2AA-3718-422B-83AC-63E19A669F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6961A2AA-3718-422B-83AC-63E19A669F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6961A2AA-3718-422B-83AC-63E19A669F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69D924F-5789-4D1F-8C15-974FC301ACDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69D924F-5789-4D1F-8C15-974FC301ACDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69D924F-5789-4D1F-8C15-974FC301ACDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69D924F-5789-4D1F-8C15-974FC301ACDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +96,7 @@ Global
 		{91E2A395-C0A1-4E6E-9FCD-1FFDF6193731} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 		{94D5BACC-21E7-4C69-A27A-35C2039519AF} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
 		{6961A2AA-3718-422B-83AC-63E19A669F2F} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
+		{F69D924F-5789-4D1F-8C15-974FC301ACDF} = {D1749D0C-19BE-4549-8EB4-3A2CA2D9D73A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A5CED3F-8E86-40B9-BA87-62C5760ABD9F}

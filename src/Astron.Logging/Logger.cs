@@ -12,7 +12,7 @@ namespace Astron.Logging
         internal Logger(ImmutableArray<ILoggingStrategy> strategies)
             => _strategies = strategies;
 
-        public void Log(LogLevel level, string message) {
+        public void Log(LogLevel level, string message = "") {
             foreach(var strategy in _strategies) strategy.Log(level, message);
         }
 
