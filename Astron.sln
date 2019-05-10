@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "e2e", "e2e", "{D1749D0C-19B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.Logging.IntegrationTests", "e2e\Astron.Logging.IntegrationTests\Astron.Logging.IntegrationTests.csproj", "{F69D924F-5789-4D1F-8C15-974FC301ACDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.IoC", "src\Astron.IoC\Astron.IoC.csproj", "{B5DC9534-16E6-414B-A571-F42307820CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astron.IoC.Tests", "tests\Astron.IoC.Tests\Astron.IoC.Tests.csproj", "{CE87EBE5-C829-4A46-97C2-6DE4B26E5E5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{F69D924F-5789-4D1F-8C15-974FC301ACDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F69D924F-5789-4D1F-8C15-974FC301ACDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F69D924F-5789-4D1F-8C15-974FC301ACDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DC9534-16E6-414B-A571-F42307820CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DC9534-16E6-414B-A571-F42307820CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DC9534-16E6-414B-A571-F42307820CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DC9534-16E6-414B-A571-F42307820CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE87EBE5-C829-4A46-97C2-6DE4B26E5E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE87EBE5-C829-4A46-97C2-6DE4B26E5E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE87EBE5-C829-4A46-97C2-6DE4B26E5E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE87EBE5-C829-4A46-97C2-6DE4B26E5E5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +109,8 @@ Global
 		{94D5BACC-21E7-4C69-A27A-35C2039519AF} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
 		{6961A2AA-3718-422B-83AC-63E19A669F2F} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 		{F69D924F-5789-4D1F-8C15-974FC301ACDF} = {D1749D0C-19BE-4549-8EB4-3A2CA2D9D73A}
+		{B5DC9534-16E6-414B-A571-F42307820CE9} = {F7FCABBF-D895-4FD8-84AC-35C2E8914540}
+		{CE87EBE5-C829-4A46-97C2-6DE4B26E5E5B} = {4D875ED2-589F-4A35-BDF3-97342E3B49EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4A5CED3F-8E86-40B9-BA87-62C5760ABD9F}

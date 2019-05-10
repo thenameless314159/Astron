@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Astron.Expressions\Astron.Expressions.csproj" />
+    <ProjectReference Include="..\Astron.Logging\Astron.Logging.csproj" />
+  </ItemGroup>
+
+</Project>
