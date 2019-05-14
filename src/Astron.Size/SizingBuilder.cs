@@ -8,17 +8,17 @@ namespace Astron.Size
     public class SizingBuilder : ISizingBuilder
     {
         public SizingBuilder() => this
-            .Register(StorageProvider.CreatePrimitive<bool>())
-            .Register(StorageProvider.CreatePrimitive<byte>())
-            .Register(StorageProvider.CreatePrimitive<sbyte>())
-            .Register(StorageProvider.CreatePrimitive<short>())
-            .Register(StorageProvider.CreatePrimitive<ushort>())
-            .Register(StorageProvider.CreatePrimitive<int>())
-            .Register(StorageProvider.CreatePrimitive<uint>())
-            .Register(StorageProvider.CreatePrimitive<long>())
-            .Register(StorageProvider.CreatePrimitive<ulong>())
-            .Register(StorageProvider.CreatePrimitive<float>())
-            .Register(StorageProvider.CreatePrimitive<double>());
+            .Register(SizeStorageProvider.CreatePrimitive<bool>())
+            .Register(SizeStorageProvider.CreatePrimitive<byte>())
+            .Register(SizeStorageProvider.CreatePrimitive<sbyte>())
+            .Register(SizeStorageProvider.CreatePrimitive<short>())
+            .Register(SizeStorageProvider.CreatePrimitive<ushort>())
+            .Register(SizeStorageProvider.CreatePrimitive<int>())
+            .Register(SizeStorageProvider.CreatePrimitive<uint>())
+            .Register(SizeStorageProvider.CreatePrimitive<long>())
+            .Register(SizeStorageProvider.CreatePrimitive<ulong>())
+            .Register(SizeStorageProvider.CreatePrimitive<float>())
+            .Register(SizeStorageProvider.CreatePrimitive<double>());
 
         public ISizingBuilder Register<T>(ISizeStorage<T> storage)
         {

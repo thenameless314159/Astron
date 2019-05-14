@@ -6,11 +6,26 @@ using Astron.Size.Matching;
 
 namespace Astron.Size.Storage
 {
-    public static class StorageProvider
+    public static class SizeStorageProvider
     {
         public static ISizeOfStorage<T> CreateLazy<T>()
         {
             LazySizeOfCache<T>.Builder = () => CreateCompiled<T>();
+            return new SizeOfStorage<T>((s, v) => LazySizeOfCache<T>.Calculate(s, v));
+        }
+
+        public static ISizeOfStorage<T> CreateLazy<T, TProvider>()
+            where TProvider : ISizeMatchingProviderOf<T, CalculateFuncCompilerOf<T>>, new()
+        {
+            LazySizeOfCache<T>.Builder = () => CreateCompiled<T, TProvider>();
+            return new SizeOfStorage<T>((s, v) => LazySizeOfCache<T>.Calculate(s, v));
+        }
+
+        public static ISizeOfStorage<T> CreateLazy<T, TBuilder, TProvider>()
+            where TBuilder : ICalculateFuncBuilderOf<T, CalculateFuncCompilerOf<T>>, new()
+            where TProvider : ISizeMatchingProviderOf<T, CalculateFuncCompilerOf<T>>, new()
+        {
+            LazySizeOfCache<T>.Builder = () => CreateCompiled<T, TBuilder, TProvider>();
             return new SizeOfStorage<T>((s, v) => LazySizeOfCache<T>.Calculate(s, v));
         }
 
@@ -29,6 +44,14 @@ namespace Astron.Size.Storage
                 CalculateFuncBuilder<T, CalculateFuncCompilerOf<T>>,
                 SizeMatchingProviderOf<T, CalculateFuncCompilerOf<T>>>();
 
+        public static ISizeOfStorage<T> CreateCompiled<T, TProvider>()
+            where TProvider : ISizeMatchingProviderOf<T, CalculateFuncCompilerOf<T>>, new()
+            => CreateCompiled<T, CalculateFuncBuilder<T, CalculateFuncCompilerOf<T>>, TProvider>();
+
+        public static ISizeOfStorage<T> CreateCompiled<T, TBuilder, TProvider>()
+            where TBuilder : ICalculateFuncBuilderOf<T, CalculateFuncCompilerOf<T>>, new()
+            where TProvider : ISizeMatchingProviderOf<T, CalculateFuncCompilerOf<T>>, new()
+            => CreateCompiled<T, CalculateFuncCompilerOf<T>, TBuilder, TProvider>();
 
         public static ISizeOfStorage<T> CreateCompiled<T, TComp, TBuilder, TProvider>()
             where TComp : ICalculateFuncCompilerOf<T>

@@ -13,7 +13,7 @@ namespace Astron.Size.Tests
         public const int SizeOfPrimitiveArray = 68;
 
         private static readonly ISizing Sizing = new SizingBuilder()
-            .Register(StorageProvider.CreateCompiled<Primitive>())
+            .Register(SizeStorageProvider.CreateCompiled<Primitive>())
             .Build();
 
         [Fact] public void CreateCompiled_ShouldHandlePrimitiveValues()
@@ -22,14 +22,14 @@ namespace Astron.Size.Tests
         [Fact]
         public void CreateCompiled_ShouldHandleTypeValue()
         {
-            var storage = StorageProvider.CreateCompiled<TypeValue>();
+            var storage = SizeStorageProvider.CreateCompiled<TypeValue>();
             Assert.Equal(SizeOfPrimitive, storage.Calculate(Sizing, new TypeValue()));
         }
 
         [Fact]
         public void CreateCompiled_ShouldHandlePrimitiveArray()
         {
-            var storage = StorageProvider.CreateCompiled<PrimitiveArray>();
+            var storage = SizeStorageProvider.CreateCompiled<PrimitiveArray>();
             Assert.Equal(SizeOfPrimitiveArray, 
                 storage.Calculate(Sizing, new PrimitiveArray { Array = new int[PrimitiveArrayLength]}));
         }
@@ -37,7 +37,7 @@ namespace Astron.Size.Tests
         [Fact]
         public void CreateCompiled_ShouldHandleTypeValueArray()
         {
-            var storage = StorageProvider.CreateCompiled<TypeValueArray>();
+            var storage = SizeStorageProvider.CreateCompiled<TypeValueArray>();
             Assert.Equal(SizeOfPrimitive * 2 + 4, // size of array + length
                 storage.Calculate(Sizing, new TypeValueArray
                 {
@@ -51,7 +51,7 @@ namespace Astron.Size.Tests
             var builder = new SizingBuilder();
             Assert.Null(LazySizeOfCache<LazyPrimitive>.Builder); // ensure nothing is set yet
 
-            var storage = StorageProvider.CreateLazy<LazyPrimitive>();
+            var storage = SizeStorageProvider.CreateLazy<LazyPrimitive>();
             Assert.NotNull(LazySizeOfCache<LazyPrimitive>.Builder); // should be set now
             Assert.Throws<KeyNotFoundException>(() => SizeOfCache<LazyPrimitive>.Calculate); // still not registered, should be null
 
