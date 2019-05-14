@@ -18,7 +18,7 @@ The main goal of this project is to provide **scalable**, **easy-to-use** and **
 These libraries were firstly designed to fit a game back-end server therefore we didn't wanted any dependency on our project and tried to implement as much as we could by ourselves. Each assembly have its matching unit-test project in the *tests/* folder.
   
 ### Unit tests  
-![UnitTests](https://i.imgur.com/7QAsxso.png)
+![UnitTests](https://i.imgur.com/KvknsXi.png)
   
 ### Project structure  
 | Assembly Name        	|                       Description                      	| Dependencies        	|
