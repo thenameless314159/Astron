@@ -3,8 +3,6 @@
 
 The main goal of this project is to provide **scalable**, **easy-to-use** and **easily configurable** implementations for a networking infrastructure such as binary reader/writers, auto-generated serializers, packet size calculation and more. All of that with the last features from the .NET Core framework.
 
-**Warning : This project is a WIP !**
-
 ## Table of Contents ##
 - [Overview](#overview)
 - [Get started](#get-started)
