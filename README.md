@@ -1,4 +1,4 @@
-# ![](https://www.shareicon.net/data/32x32/2016/11/09/851508_planet_512x512.png) Astron [![Build Status](https://travis-ci.com/thenameless314159/Astron.svg?branch=master)](https://travis-ci.com/thenameless314159/Astron)
+# ![](https://www.shareicon.net/data/32x32/2016/11/09/851508_planet_512x512.png) Astron [![Build Status](https://travis-ci.com/thenameless314159/Astron.svg?branch=master)](https://travis-ci.com/thenameless314159/Astron) [![NuGet Badge](https://buildstats.info/nuget/astron)](https://www.nuget.org/packages/Astron/0.0.1)
 **.NET Core 2.2** from scratch set of library using last feature of C# language. This project was made by myself under the direction of [*DrBrook*](https://github.com/DrBrooklyn "DrBrook") for learning purpose. 
 
 The main goal of this project is to provide **scalable**, **easy-to-use** and **easily configurable** implementations for a networking infrastructure such as binary reader/writers, auto-generated serializers, packet size calculation and more. All of that with the last features from the .NET Core framework.
