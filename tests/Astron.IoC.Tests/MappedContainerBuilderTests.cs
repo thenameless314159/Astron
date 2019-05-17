@@ -19,7 +19,7 @@ namespace Astron.IoC.Tests
         {
             _builder.Register<MappedType>(1);
             _builder.Build();
-            _builder.Register<ThirdMappedType>(2);
+            _builder.Register<FourthMappedType>(4);
             _builder.Build();
 
             Assert.Equal(1, _builder.TypesCount);

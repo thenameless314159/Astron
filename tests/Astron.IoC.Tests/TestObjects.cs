@@ -16,6 +16,8 @@ namespace Astron.IoC.Tests
 
     internal class ThirdMappedType { }
 
+    internal class FourthMappedType { }
+
     internal class Simple { }
     internal class SecondSimple { }
     internal class ThirdSimple { }
