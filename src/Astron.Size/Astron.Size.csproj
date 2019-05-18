@@ -3,6 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <Authors>NamelessK1NG</Authors>
+    <Description>Size-calculation logic with auto-generated methods for POCOs.</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIconUrl>https://camo.githubusercontent.com/921820b5e319dcfe1248ca4a20ae1295e276b5e2/68747470733a2f2f7777772e736861726569636f6e2e6e65742f646174612f33327833322f323031362f31312f30392f3835313530385f706c616e65745f353132783531322e706e67</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/thenameless314159/Astron</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thenameless314159/Astron</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -16,6 +25,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Astron.Expressions\Astron.Expressions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

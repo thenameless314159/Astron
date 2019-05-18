@@ -5,16 +5,43 @@ mono: none
 dotnet: 2.2.203
 env:
   global:
-    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
-    - DOTNET_CLI_TELEMETRY_OPTOUT=true
+  - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+  - DOTNET_CLI_TELEMETRY_OPTOUT=true
+  - secure: aB4PZ67cBvtSTR8A1nxDHDyN2qav140BpsaiQ8DL66QwR61Z6aYfFfv71PCQfmpwE8RlBzlxcGtuF6e1M/AtPqKZhci4Yg9h6L0DwX7981T99UWrNcC4RmF336Zw1mGHzGqfPy0NE7ysyS4FesuO4P/3oCb7k5ct85a/hQUFLOYydXdEAkr/U11JDv+X/rCrNBiiqZ9qqSUToptNQDiEWu1KC6P65iiNkSy3NV6nbuU78y0qiqqLzH1Xac29pbI1sY3nAfCsLP+XiGjn/h4v9awfueaLgTK+Re2J+yUwPtgMB/HKeS+BvjkIwkdRkzA0FKpaSYc1xik3upRuHlORO45A3pKNEtYIQ2ypF21+N5cjSPn0jlTfcn7tVQG0UCnm899DEfXcVShptgTFr5uRSkO5zdYT6xUtBJoZ3ajiCVwHPRhH5FTawBGG+MedYk0PUu6VTzeCtbktKzhGpJQs4sd6a2SSSyNXkg1+XUAFQ17o0GcG+M2tsvzmfDAYRxfEHKeNffbN+6euVK60gCTnyLHH6lnxIiDu8kdwsQW2zg1dV/H3TCMxqGpp8k5+P3SkRsq1r1dIiKPTZpS+NVMy7TZkmW9Fa+R1Fyz4QT+KHWX8AX9dfLPesuwj2oMX2lU1tBoYZLc/Fyvbp+k9c+UfElxOKk3okobbEnyzS8j3DiY=
 stages:
-  - build
-  - test
+- build
+- test
+- pack
+- publishBinary
 jobs:
   include:
-    - stage: build
-      name: build solution
-      script: dotnet restore && dotnet build
-    - stage: test
-      name: run-tests
-      script: dotnet test
+  - stage: build
+        name: build-solution
+        script: dotnet restore && dotnet build -c Release
+  - stage: test
+        name: run-tests
+        script: dotnet test
+    - stage: pack
+        name: pack-packages
+        script: dotnet pack -c Release
+    - stage: publish
+        name: publish-binary
+        script: dotnet nuget push src/Astron.Binary/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
+    -
+        name: publish-expressions
+        script: dotnet nuget push src/Astron.Expressions/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
+    -
+        name: publish-ioc
+        script: dotnet nuget push src/Astron.IoC/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
+    -
+        name: publish-logging
+        script: dotnet nuget push src/Astron.Logging/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
+    -
+        name: publish-memory
+        script: dotnet nuget push src/Astron.Memory/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
+    -
+        name: publish-serialization
+        script: dotnet nuget push src/Astron.Serialization/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
+    -
+        name: publish-size
+        script: dotnet nuget push src/Astron.Size/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY

@@ -3,20 +3,29 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>NamelessK1NG</Authors>
-    <Description>.NET Core 2.2 from scratch set of library (such as binary, serialization, IoC...) using last features of the C# language for best practices.</Description>
-    <Copyright>2019</Copyright>
+    <Description>Memory policy with base implementations with ArrayPool&lt;T&gt; support from the BCL.</Description>
+    <Copyright>Copyright 2019</Copyright>
     <PackageProjectUrl>https://github.com/thenameless314159/Astron</PackageProjectUrl>
     <RepositoryUrl>https://github.com/thenameless314159/Astron</RepositoryUrl>
     <RepositoryType />
-    <AssemblyVersion>0.0.0.1</AssemblyVersion>
-    <FileVersion>0.0.0.1</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageIconUrl>https://camo.githubusercontent.com/921820b5e319dcfe1248ca4a20ae1295e276b5e2/68747470733a2f2f7777772e736861726569636f6e2e6e65742f646174612f33327833322f323031362f31312f30392f3835313530385f706c616e65745f353132783531322e706e67</PackageIconUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <Optimize>true</Optimize>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
