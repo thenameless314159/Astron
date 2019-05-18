@@ -12,7 +12,7 @@ stages:
 - build
 - test
 - pack
-- publishBinary
+- publish
 jobs:
   include:
   - stage: build
