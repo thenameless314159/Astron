@@ -27,21 +27,21 @@ jobs:
     - stage: publish
         name: publish-binary
         script: dotnet nuget push src/Astron.Binary/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
-    -
+    - stage: publish
         name: publish-expressions
         script: dotnet nuget push src/Astron.Expressions/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
-    -
+    - stage: publish
         name: publish-ioc
         script: dotnet nuget push src/Astron.IoC/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
-    -
+    - stage: publish
         name: publish-logging
         script: dotnet nuget push src/Astron.Logging/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
-    -
+    - stage: publish
         name: publish-memory
         script: dotnet nuget push src/Astron.Memory/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
-    -
+    - stage: publish
         name: publish-serialization
         script: dotnet nuget push src/Astron.Serialization/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
-    -
+    - stage: publish
         name: publish-size
         script: dotnet nuget push src/Astron.Size/bin/Release/Astron.*.nupkg --api-key $NUGET_API_KEY
