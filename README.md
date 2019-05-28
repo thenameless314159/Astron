@@ -24,7 +24,7 @@ Most of the features you need are **already implemented** (such as logger, IoC c
 | Assembly Name        	|                       Description                       	| Dependencies                     	|
 |----------------------	|:-------------------------------------------------------:	|----------------------------------	|
 | Astron.Binary        	| Binary reader & writer extandable API with offset logic 	|                     Memory, Size 	|
-| Astron.Expressions   	|        Expression tree wrapper with some helpers        	| AgileObjects.ReadableExpressions 	|
+| Astron.Expressions   	|        Expression tree wrapper with some helpers        	|                             none 	|
 | Astron.IoC           	|       IoC container for dependency injection logic      	|              Immutables, Logging 	|
 | Astron.Logging       	|                 Lightweight logging API                 	|                             none 	|
 | Astron.Memory        	|         Memory policy with base implementations         	|                             none 	|
