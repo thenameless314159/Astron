@@ -4,7 +4,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using AgileObjects.ReadableExpressions;
 using Astron.Expressions.Helpers;
 
 [assembly: InternalsVisibleTo("Astron.Expressions.Tests")]
@@ -366,6 +365,5 @@ namespace Astron.Expressions
 
         public TDelegate Compile() => ToExpression().Compile();
         public Expression<TDelegate> ToExpression() => Expression.Lambda<TDelegate>(ToBlock(), Parameters);
-        public override string ToString() => ToExpression().ToReadableString();
     }
 }

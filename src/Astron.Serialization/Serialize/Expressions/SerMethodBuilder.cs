@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
-using AgileObjects.ReadableExpressions;
 using Astron.Binary.Writer;
 using Astron.Expressions.Helpers;
 using Astron.Expressions.Matching;
@@ -44,11 +43,5 @@ namespace Astron.Serialization.Serialize.Expressions
 
             SetExpr();
         }
-
-        /// <summary>
-        /// Call the ToString() method of the current expression compiler
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString() => IsAlreadyBuilt ? _builtExpr.ToReadableString() : ExprCompiler.ToString();
     }
 }

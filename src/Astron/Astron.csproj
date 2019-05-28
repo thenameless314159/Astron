@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>NamelessK1NG</Authors>
+    <Company>NamelessK1NG</Company>
+    <Description>.NET Core 2.2 from scratch set of library (such as binary, serialization, IoC...) using last features of the C# language for best practices.</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/thenameless314159/Astron</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thenameless314159/Astron</RepositoryUrl>
+    <PackageIconUrl>https://camo.githubusercontent.com/921820b5e319dcfe1248ca4a20ae1295e276b5e2/68747470733a2f2f7777772e736861726569636f6e2e6e65742f646174612f33327833322f323031362f31312f30392f3835313530385f706c616e65745f353132783531322e706e67</PackageIconUrl>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Astron.Binary\Astron.Binary.csproj" />
+    <ProjectReference Include="..\Astron.Expressions\Astron.Expressions.csproj" />
+    <ProjectReference Include="..\Astron.IoC\Astron.IoC.csproj" />
+    <ProjectReference Include="..\Astron.Logging\Astron.Logging.csproj" />
+    <ProjectReference Include="..\Astron.Memory\Astron.Memory.csproj" />
+    <ProjectReference Include="..\Astron.Serialization\Astron.Serialization.csproj" />
+    <ProjectReference Include="..\Astron.Size\Astron.Size.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
